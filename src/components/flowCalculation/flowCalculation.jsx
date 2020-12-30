@@ -59,7 +59,7 @@ const FlowCalculation = () => {
         <Button variant="contained" color="secondary" type="submit">
           Submit
         </Button>
-        <h2>Ans: {ans}</h2>
+        <h2>Stop Invert: {ans}</h2>
       </form>
     </div>
   );
