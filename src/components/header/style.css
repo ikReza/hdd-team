@@ -1,0 +1,24 @@
+.header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-icon {
+  margin-left: 20px;
+}
+
+.home-icon {
+  color: white;
+}
+
+.header-options {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 150px;
+}

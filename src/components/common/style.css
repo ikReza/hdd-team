@@ -1,0 +1,19 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.option-btn {
+  width: 200px;
+  font-weight: bold;
+}
