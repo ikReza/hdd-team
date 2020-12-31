@@ -14,7 +14,7 @@ const StartInvert = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setAns(find_start_invert);
+    setAns(find_start_invert(stopInvert, conduitSlope, conduitLength));
   };
   return (
     <>

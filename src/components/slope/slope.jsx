@@ -14,7 +14,7 @@ const Slope = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setAns(find_slope);
+    setAns(find_slope(startInvert, stopInvert, conduitLength));
   };
   return (
     <>
