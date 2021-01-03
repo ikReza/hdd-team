@@ -18,21 +18,27 @@ const Header = () => {
           </div>
           {/* <Typography variant="h6">HDD</Typography> */}
           <div className="header-options">
-            <Link to="/start-invert">
-              <Button size="small" variant="contained">
-                Start Invert
-              </Button>
-            </Link>
-            <Link to="/stop-invert">
-              <Button size="small" variant="contained">
-                Stop Invert
-              </Button>
-            </Link>
-            <Link to="/slope">
-              <Button size="small" variant="contained">
-                Slope
-              </Button>
-            </Link>
+            {window.location.pathname !== "/start-invert" && (
+              <Link to="/start-invert">
+                <Button size="small" variant="contained">
+                  Start Invert
+                </Button>
+              </Link>
+            )}
+            {window.location.pathname !== "/stop-invert" && (
+              <Link to="/stop-invert">
+                <Button size="small" variant="contained">
+                  Stop Invert
+                </Button>
+              </Link>
+            )}
+            {window.location.pathname !== "/slope" && (
+              <Link to="/slope">
+                <Button size="small" variant="contained">
+                  Slope
+                </Button>
+              </Link>
+            )}
           </div>
         </div>
       </Toolbar>
