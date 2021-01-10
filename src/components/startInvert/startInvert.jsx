@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Grid, TextField, Button } from "@material-ui/core";
-
 import { ContainerGrid, FormContainer } from "../common/style";
 import { find_start_invert } from "../common/calculation";
 import Header from "../header/header";
@@ -14,7 +13,13 @@ const StartInvert = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setAns(find_start_invert(stopInvert, conduitSlope, conduitLength));
+    let start_invert = find_start_invert(
+      Number(stopInvert),
+      conduitSlope,
+      conduitLength
+    );
+
+    setAns(start_invert);
   };
   return (
     <>
